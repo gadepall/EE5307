@@ -39,7 +39,7 @@
 %\usepackage{stmaryrd}
 
 \usepackage{listings}
-    \usepackage[latin1]{inputenc}                                 %%
+%    \usepackage[latin]{inputenc}                                 %%
     \usepackage{color}                                            %%
     \usepackage{array}                                            %%
     \usepackage{longtable}                                        %%
@@ -49,6 +49,15 @@
     \usepackage{ifthen}                                           %%
   %optionally (for landscape tables embedded in another document): %%
     \usepackage{lscape}     
+%\usepackage{tikz}
+%\usepackage{tkz-euclide}
+%\usetkzobj{all}
+%%\usepackage[utf8]{inputenc}
+%\usepackage{rotating}
+%\usetikzlibrary{arrows,shapes,decorations.markings,positioning}
+%\usepackage{amsmath}
+%\usepackage{ulem}
+%\usepackage{soul}
 
 %\usepackage{wasysym}
 %\newcounter{MYtempeqncnt}
@@ -61,6 +70,12 @@
 \renewcommand\thesectiondis{\arabic{section}}
 \renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
 \renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+%\DeclareUnicodeCharacter{01B5}{\zst}
+%\DeclareRobustCommand\zst{%
+%\unskip\nobreak\thinspace\zbar\allowbreak\thinspace\ignorespaces}
+%\newcommand{\zbar}{\raisebox{0.2ex}{--}\kern-0.6em Z}
+
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
@@ -277,12 +292,23 @@ Show that
 \end{equation}
 \end{problem}
 
-\begin{figure}
+%
+\begin{figure}[!h]
 \centering
 \includegraphics[width=\columnwidth]{./figs/contour.eps}
 \caption{}
 \label{fig:contour}
 \end{figure}
+%
+
+%\begin{figure}[!h]
+%\centering
+%\resizebox {\columnwidth} {!} {
+%\input{./figs/contour.tex}
+%}
+%\caption{}
+%\label{fig:contour}
+%\end{figure}
 \begin{problem}
 Show that
 \begin{equation}
@@ -292,7 +318,7 @@ by substituting $z = Re^{\j \theta}, 0 < \theta < \pi$.
 \end{problem}
 %
 \begin{problem}
-Let $C$ be within the curve $T$.  Then given that
+Let $C$ be a closed curve within the curve $T$.  Then given that
 \begin{equation}
 \ointctrclockwise_C \frac{e^{-\j zt}}{1+z^2}\,dz = \ointctrclockwise_T \frac{e^{-\j zt}}{1+z^2}\,dz,
 \end{equation}
@@ -304,7 +330,7 @@ show that
 \begin{problem}
 Given that
 \begin{equation}
-\ointctrclockwise_C \frac{f(z)}{z-z_0} = 2\pi \j f(z_0), 
+\ointctrclockwise_C \frac{f(z)}{z-z_0}\,dz = 2\pi \j f(z_0), 
 \end{equation}
 %
 where $z_0$ is within $C$, show that
@@ -322,7 +348,87 @@ Now find
 \begin{problem}
 Obtain an expression for the probability density function (PDF) of $X$.
 \end{problem}
-
+\section{Cauchy's Integral Formula}
+\begin{problem}
+Show that
+\begin{equation}
+\ointctrclockwise_C \frac{f(z)}{z-z_0}\,dz =  f(z_0)\ointctrclockwise_C \frac{dz}{z-z_0} + \ointctrclockwise_C \frac{f(z)-f(z_0)}{z-z_0}\,dz
+\end{equation}
+\end{problem}
+\begin{problem}
+For $C:z = z_0+\rho e^{\j\theta}, 0 < \theta < \pi$, show that
+\begin{equation}
+\ointctrclockwise_C \frac{dz}{z-z_0} = 2\pi \j
+\end{equation}
+\end{problem}
+%
+\begin{problem}
+Let
+\begin{equation}
+\abs{\frac{f(z)-f(z_0)}{z-z_0} - K} < \delta \implies \abs{z-z_0} < \epsilon
+\end{equation}
+for some $\epsilon, \delta > 0$.  
+\begin{enumerate}
+\item
+Show that 
+\begin{equation}
+\abs{f(z)-Kz -f(z_0)+Kz_0} < \epsilon\delta
+\end{equation}
+\item Let
+\begin{align}
+f_1(z) &=  f(z)-Kz
+\\
+f_2(z) &= Kz 
+\end{align}
+Show that 
+\begin{multline}
+\abs{f_1(z)+f_2(z)-f_1(z_0)-f_2(z_0)} 
+\\
+= \abs{f(z)-f(z_0)} < \kappa 
+\end{multline}
+%Let $f_1(z),f_2(z)$ be two functions such that
+%\begin{align}
+%\abs{f_1(z)-f_1(z_0)} < \delta_1 \implies \abs{z-z_0} < \epsilon_1
+%\\
+%\abs{f_1(z)-f_1(z_0)} < \delta_1 \implies \abs{z-z_0} < \epsilon_1
+%\end{align}
+\item Let
+\begin{equation}
+g(z)=\abs{\frac{f(z)-f(z_0)}{z-z_0} - K}
+\end{equation}
+\end{enumerate}
+%\begin{equation}
+%\abs{f(z)-f(z_0)} < \delta_1 \implies \abs{z-z_0} < \epsilon_1, \quad \epsilon_1, \delta_1 > 0
+%\end{equation}
+\end{problem}
+\begin{problem}
+Let 
+\begin{equation}
+\abs{g(z)} < \frac{\epsilon}{\rho}
+\end{equation}
+Show that, if $C:z = \rho e^{\j\theta}, 0 < \theta < 2\pi$ and $z_i \in C, \Delta z_m = z_m - z_{m-1}, \zeta_m \in \brak{z_{n-1},z_{n}}$,
+\begin{equation}
+\abs{\sum_{m=1}^{n}g(\zeta_m)\Delta z_m} < 2\pi\epsilon
+\end{equation}
+\end{problem}
+\begin{definition}
+\begin{equation}
+\int_C g(z)\,dz = \lim_{\substack{\Delta z_m \to 0 \\ n \to \infty}}\abs{\sum_{m=1}^{n}g(\zeta_m)\Delta z_m} 
+\end{equation}
+\end{definition}
+\begin{problem}
+Show that 
+\begin{equation}
+\abs{\int_C \frac{f(z)-f(z_0)}{z-z_0}\,dz} < 2\pi\epsilon
+\end{equation}
+%
+\end{problem}
+\begin{problem}
+Show that
+\begin{equation}
+\ointctrclockwise_C \frac{f(z)}{z-z_0}\,dz =  2\pi \j f(z_0)
+\end{equation}
+\end{problem}
 %\begin{problem}
 %The PDf of an exponential random variable $X$ is defined as
 %%
