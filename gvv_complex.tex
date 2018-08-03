@@ -138,6 +138,13 @@ breaklines=true
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 %\numberwithin{equation}{section}
 %\numberwithin{problem}{section}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+
+\let\StandardTheFigure\thefigure
+%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
+\renewcommand{\thefigure}{\theproblem}
 
 \def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
      \def\rightbox#1{\makebox[0in][r]{#1}}
@@ -150,7 +157,7 @@ breaklines=true
 % can use linebreaks \\ within to get better formatting as desired
 \title{
 \logo{
-Complex Analysis in Probability
+Contour Integration
 }
 }
 %
@@ -413,6 +420,7 @@ Show that, if $C:z = \rho e^{\j\theta}, 0 < \theta < 2\pi$ and $z_i \in C, \Delt
 \end{problem}
 \begin{definition}
 \begin{equation}
+\label{eq:line_int_def}
 \int_C g(z)\,dz = \lim_{\substack{\Delta z_m \to 0 \\ n \to \infty}}\abs{\sum_{m=1}^{n}g(\zeta_m)\Delta z_m} 
 \end{equation}
 \end{definition}
@@ -429,6 +437,71 @@ Show that
 \ointctrclockwise_C \frac{f(z)}{z-z_0}\,dz =  2\pi \j f(z_0)
 \end{equation}
 \end{problem}
+\section{Cauchy's Integral Theorem}
+\begin{definition}
+ The  derivative of $f(z)$ is defined as
+\begin{equation}
+\lim_{\Delta z \to 0} \frac{f(z+\Delta z)-f(z)}{\Delta z}
+\end{equation}
+$f(z)$ is said to be {\em analytic} if its derivative exists.
+\end{definition}
+\begin{problem}
+Let $z = x + \j y, \Delta z = \Delta x + \Delta y, f(z) = u(x,y)+\j v(x,y)$. 
+\begin{enumerate}
+\item By letting $\Delta y \to 0$ followed by $\Delta x \to 0$, show that
+\begin{align}
+f^{\prime}(z) = \frac{\partial u}{\partial x} + \j \frac{\partial v}{\partial x}
+\end{align}
+\item By letting $\Delta x \to 0$ followed by $\Delta y \to 0$, show that
+\begin{align}
+f^{\prime}(z) = \frac{\partial v}{\partial y} - \j \frac{\partial u}{\partial y}
+\end{align}
+\end{enumerate}
+\end{problem}
+\begin{problem}
+Show that
+\begin{align}
+\frac{\partial u}{\partial x} &= \frac{\partial v}{\partial y}
+\\
+\frac{\partial u}{\partial y} &= -\frac{\partial v}{\partial x}
+\end{align}
+These are known as the {\em Cauchy-Riemann} equations.
+\end{problem}
+%
+\begin{problem}
+Using \eqref{eq:line_int_def}, show that
+\begin{multline}
+\oint_{C}f(z)\,dz = \oint_{C}\brak{u\,dx- v\,dy }
+\\
++ \j \oint_{C}\brak{u\,dy+v\,dx}
+\end{multline}
+\end{problem}
+\begin{problem}
+According to {\em Green's Theorem}, for a closed curve $C$,
+\begin{equation}
+\oint_{C}\brak{u\,dx- v\,dy} = \iint_{R} \brak{-\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}}\,dx\,dy
+\end{equation}
+where $R$ is bounded by $C$.  Show that
+\begin{equation}
+\oint_{C}f(z)\,dz  = 0.
+\end{equation}
+assuming that $f(z)$ is analytic everywhere inside $C$.
+\end{problem}
+%
+\begin{problem}
+In Fig. \ref{fig:CT},  show that 
+\begin{equation}
+\oint_{C}f(z)\,dz = \oint_{T}f(z)\,dz
+\end{equation}
+given that $f(z)$ is analytic in the region between $C-T$.
+\end{problem}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\columnwidth]{./figs/CT.eps}
+\caption{}
+\label{fig:CT}
+\end{figure}
+%
 %\begin{problem}
 %The PDf of an exponential random variable $X$ is defined as
 %%

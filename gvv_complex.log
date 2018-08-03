@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.7.30)  3 AUG 2018 15:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.7.30)  3 AUG 2018 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -610,30 +610,30 @@ Package caption Info: End \AtBeginDocument code.
 File: iith_logo.eps Graphic file (type eps)
 
 <iith_logo.eps>
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 218.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 218.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 225.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 225.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 218.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 225.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 218.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 225.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 218.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 225.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 218.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 225.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
@@ -641,7 +641,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 )
 File: tlc.eps Graphic file (type eps)
  <tlc.eps>
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 218.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 225.
 File: iith_logo.eps Graphic file (type eps)
 
 <iith_logo.eps>
@@ -652,22 +652,13 @@ File: iith_logo.eps Graphic file (type eps)
 File: tlc.eps Graphic file (type eps)
  <tlc.eps>
 
-LaTeX Warning: Command \j invalid in math mode on input line 267.
+LaTeX Warning: Command \j invalid in math mode on input line 274.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 273.
+LaTeX Warning: Command \j invalid in math mode on input line 280.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 273.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 277.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 277.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 282.
+LaTeX Warning: Command \j invalid in math mode on input line 280.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 284.
@@ -676,13 +667,22 @@ LaTeX Warning: Command \j invalid in math mode on input line 284.
 LaTeX Warning: Command \j invalid in math mode on input line 284.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 284.
+LaTeX Warning: Command \j invalid in math mode on input line 289.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 291.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 291.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 291.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 298.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 298.
 
 File: ./figs/contour.eps Graphic file (type eps)
 <./figs/contour.eps>
@@ -690,56 +690,84 @@ File: ./figs/contour.eps Graphic file (type eps)
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 315.
+LaTeX Warning: Command \j invalid in math mode on input line 322.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 317.
+LaTeX Warning: Command \j invalid in math mode on input line 324.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 323.
+LaTeX Warning: Command \j invalid in math mode on input line 330.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 323.
+LaTeX Warning: Command \j invalid in math mode on input line 330.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 327.
+LaTeX Warning: Command \j invalid in math mode on input line 334.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 327.
+LaTeX Warning: Command \j invalid in math mode on input line 334.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 333.
+LaTeX Warning: Command \j invalid in math mode on input line 340.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 338.
+LaTeX Warning: Command \j invalid in math mode on input line 345.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 344.
+LaTeX Warning: Command \j invalid in math mode on input line 351.
 
 [1
 
 
 ]
 
-LaTeX Warning: Command \j invalid in math mode on input line 359.
+LaTeX Warning: Command \j invalid in math mode on input line 366.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 361.
+LaTeX Warning: Command \j invalid in math mode on input line 368.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 409.
+LaTeX Warning: Command \j invalid in math mode on input line 416.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 429.
+LaTeX Warning: Command \j invalid in math mode on input line 437.
 
-[2] (./gvv_complex.aux) ) 
+
+LaTeX Warning: Command \j invalid in math mode on input line 449.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 449.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 454.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 454.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 458.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 458.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 477.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 477.
+
+[2]
+File: ./figs/CT.eps Graphic file (type eps)
+ <./figs/CT.eps> [3
+
+] (./gvv_complex.aux) ) 
 Here is how much of TeX's memory you used:
- 7286 strings out of 494946
- 110161 string characters out of 6181058
- 212496 words of memory out of 5000000
- 10466 multiletter control sequences out of 15000+600000
+ 7291 strings out of 494946
+ 110222 string characters out of 6181058
+ 214496 words of memory out of 5000000
+ 10470 multiletter control sequences out of 15000+600000
  67844 words of font info for 167 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  36i,8n,40p,229b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_complex.dvi (2 pages, 10560 bytes).
+Output written on gvv_complex.dvi (3 pages, 13928 bytes).
