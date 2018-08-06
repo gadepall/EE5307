@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.7.30)  4 AUG 2018 11:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.7.30)  6 AUG 2018 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -663,18 +663,98 @@ LaTeX Warning: Command \j invalid in math mode on input line 291.
 
 LaTeX Warning: Command \j invalid in math mode on input line 291.
 
+
+LaTeX Warning: Command \j invalid in math mode on input line 304.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 309.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 316.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 316.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 316.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 328.
+
+File: ./figs/laplace.eps Graphic file (type eps)
+<./figs/laplace.eps>
+
+LaTeX Warning: Command \j invalid in math mode on input line 344.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 344.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 354.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 354.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 354.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 354.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 354.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 354.
+
 [1
 
 
+]
+
+LaTeX Warning: Command \j invalid in math mode on input line 362.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 362.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 362.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 362.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 362.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 362.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 362.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 362.
+
+File: ./figs/origin_contour.ps Graphic file (type eps)
+<./figs/origin_contour.ps> [2
 
 ] (./gvv_app_ee.aux) ) 
 Here is how much of TeX's memory you used:
- 7274 strings out of 494946
- 109980 string characters out of 6181058
- 207496 words of memory out of 5000000
- 10456 multiletter control sequences out of 15000+600000
+ 7294 strings out of 494946
+ 110268 string characters out of 6181058
+ 210496 words of memory out of 5000000
+ 10472 multiletter control sequences out of 15000+600000
  67844 words of font info for 167 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,9n,40p,228b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,15n,40p,228b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_app_ee.dvi (1 page, 3652 bytes).
+Output written on gvv_app_ee.dvi (2 pages, 8020 bytes).

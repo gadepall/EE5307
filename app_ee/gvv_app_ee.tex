@@ -297,6 +297,77 @@ X(z) = \frac{z^{20}}{\brak{z-\frac{1}{2}}\brak{z-2}^5\brak{z+\frac{5}{2}}^2\brak
 \end{equation}
 Also, it is known that $X(z)$ is analytic for $\abs{z} = 1$. Find $x(-18)$.
 \end{problem}
+\section{The Laplace Transform}
+\begin{problem}
+Let
+\begin{equation}
+\int_{-\infty}^{\infty}F(t)e^{-st}\,dt = \frac{1}{s\brak{1-s^2}} = \frac{M(s)}{s}, \quad s = \sigma + \j \omega
+\end{equation}
+Using the inverse fourier transform relationship, show that
+\begin{equation}
+\label{eq:laplace_key}
+F(t)e^{-\sigma t} = \frac{1}{2\pi}\int_{-\infty}^{\infty}\frac{e^{\j\omega t}}{s\brak{1-s^2}}\,d\omega
+\end{equation}
+\end{problem}
+%
+\begin{problem}
+Show that
+\begin{equation}
+F(t) = \frac{1}{2\pi \j}\int_{\sigma - \j \infty}^{\sigma + \j \infty}\frac{e^{s t}}{s\brak{1-s^2}}\,ds
+\end{equation}
+\end{problem}
+\begin{problem}
+Let
+\begin{align}
+F(t) = 
+\begin{cases}
+\frac{1}{2\pi \j}\ointctrclockwise_{C_1}\frac{e^{st}}{s\brak{1-s^2}}\,ds & t > 0
+\\
+\frac{1}{2\pi \j}\ointctrclockwise_{C_2}\frac{e^{st}}{s\brak{1-s^2}}\,ds & t < 0
+\end{cases}
+\end{align}
+where $C_1, C_2$ are the closed contours on the left and right respectively as shown in Fig. \ref{fig:laplace}. Find $F(t)$
+given that the ROC of $\frac{M(s)}{s}$ is $0 < \text{Re}\brak{s} < 1$.
+\end{problem}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\columnwidth]{./figs/laplace.eps}
+\caption{}
+\label{fig:laplace}
+\end{figure}
+%
+\section{The Gil-Pelaez Integral}
+\begin{problem}
+Let
+\begin{equation}
+\label{eq:gil}
+F(t) = \frac{1}{2}-\frac{1}{2\pi\j}\times \text{c.p.v.}\int_{-\infty}^{\infty}\frac{e^{-\j\omega t}}{\omega\brak{1+\omega^2}}\,d\omega,
+\end{equation}
+where c.p.v. denotes the Cauchy Principal Value. Use the contour in Fig. \ref{fig:origin_contour} to evaluate $F(t), t < 0$
+by showing that
+\begin{enumerate}
+\item
+\begin{multline}
+\lim_{r\to 0}\int_{C_r}\frac{e^{-\j zt}}{z\brak{1+z^2}}\,dz = -\j\pi, 
+\\
+C_r: z = re^{-\j\theta}, 0 < \theta < \pi
+\end{multline}
+\item 
+\begin{multline}
+\lim_{\substack{r\to 0 \\ R \to \infty}}\int_{-R}^{-r}\frac{e^{-\j\omega t}}{\omega\brak{1+\omega^2}}\,d\omega
++
+\int_{r}^{R}\frac{e^{-\j\omega t}}{\omega\brak{1+\omega^2}}\,d\omega 
+\\
+= \j\pi + \ointctrclockwise_{C}\frac{e^{-\j zt}}{z\brak{1+z^2}}\,dz
+\end{multline}
+\end{enumerate}
+\end{problem}	
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\columnwidth]{./figs/origin_contour.ps}
+\caption{}
+\label{fig:origin_contour}
+\end{figure}
 %\section{Contour Integration}
 %%
 %In Fig. \ref{fig:contour}, let $z = x + \j y, C = C_1+C_2$. It is obvious that the line integral in the anti-clockwise direction
