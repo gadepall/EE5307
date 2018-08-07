@@ -156,9 +156,9 @@ breaklines=true
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
 \title{
-\logo{
+%\logo{
 Contour Integration
-}
+%}
 }
 %
 %
@@ -363,7 +363,7 @@ Show that
 \end{equation}
 \end{problem}
 \begin{problem}
-For $C:z = z_0+\rho e^{\j\theta}, 0 < \theta < \pi$, show that
+For $C:z = z_0+\rho e^{\j\theta}, 0 < \theta < 2\pi$, show that
 \begin{equation}
 \ointctrclockwise_C \frac{dz}{z-z_0} = 2\pi \j
 \end{equation}
@@ -391,7 +391,7 @@ Show that
 \begin{multline}
 \abs{f_1(z)+f_2(z)-f_1(z_0)-f_2(z_0)} 
 \\
-= \abs{f(z)-f(z_0)} < \kappa 
+= \abs{f(z)-f(z_0)} < \lambda
 \end{multline}
 %Let $f_1(z),f_2(z)$ be two functions such that
 %\begin{align}
@@ -401,7 +401,12 @@ Show that
 %\end{align}
 \item Let
 \begin{equation}
-g(z)=\abs{\frac{f(z)-f(z_0)}{z-z_0} - K}
+g(z)=\frac{f(z)-f(z_0)}{z-z_0}
+\end{equation}
+Show that 
+\begin{equation}
+\abs{z-z_0} = \rho \implies
+\abs{g(z)} < \frac{\lambda}{\rho}
 \end{equation}
 \end{enumerate}
 %\begin{equation}
@@ -411,11 +416,11 @@ g(z)=\abs{\frac{f(z)-f(z_0)}{z-z_0} - K}
 \begin{problem}
 Let 
 \begin{equation}
-\abs{g(z)} < \frac{\epsilon}{\rho}
+\abs{g(z)} < \frac{\lambda}{\rho}
 \end{equation}
 Show that, if $C:z = \rho e^{\j\theta}, 0 < \theta < 2\pi$ and $z_i \in C, \Delta z_m = z_m - z_{m-1}, \zeta_m \in \brak{z_{n-1},z_{n}}$,
 \begin{equation}
-\abs{\sum_{m=1}^{n}g(\zeta_m)\Delta z_m} < 2\pi\epsilon
+\lim_{\substack{\Delta z_m \to 0 \\ n \to \infty}}\abs{\sum_{m=1}^{n}g(\zeta_m)\Delta z_m} < 2\pi\lambda
 \end{equation}
 \end{problem}
 \begin{definition}
@@ -427,7 +432,7 @@ Show that, if $C:z = \rho e^{\j\theta}, 0 < \theta < 2\pi$ and $z_i \in C, \Delt
 \begin{problem}
 Show that 
 \begin{equation}
-\abs{\int_C \frac{f(z)-f(z_0)}{z-z_0}\,dz} < 2\pi\epsilon
+\abs{\int_C \frac{f(z)-f(z_0)}{z-z_0}\,dz} < 2\pi\lambda
 \end{equation}
 %
 \end{problem}
