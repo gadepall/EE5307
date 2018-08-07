@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.7.30)  7 AUG 2018 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.7.30)  7 AUG 2018 18:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -607,10 +607,12 @@ Package caption Info: End \AtBeginDocument code.
 \c@example=\count149
 \c@definition=\count150
 \c@rem=\count151
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 225.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 225.
+File: iith_logo.eps Graphic file (type eps)
 
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+<iith_logo.eps>
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 225.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 225.
+ (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Try loading font information for U+txmia on input line 225.
@@ -637,6 +639,18 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 225.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
+File: tlc.eps Graphic file (type eps)
+ <tlc.eps>
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 225.
+File: iith_logo.eps Graphic file (type eps)
+
+<iith_logo.eps>
+File: tlc.eps Graphic file (type eps)
+ <tlc.eps>
+File: iith_logo.eps Graphic file (type eps)
+ <iith_logo.eps>
+File: tlc.eps Graphic file (type eps)
+ <tlc.eps>
 
 LaTeX Warning: Command \j invalid in math mode on input line 274.
 
@@ -716,10 +730,6 @@ LaTeX Warning: Command \j invalid in math mode on input line 368.
 LaTeX Warning: Command \j invalid in math mode on input line 421.
 
 
-Underfull \vbox (badness 1939) has occurred while \output is active []
-
-
-
 LaTeX Warning: Command \j invalid in math mode on input line 442.
 
 
@@ -752,12 +762,12 @@ File: ./figs/CT.eps Graphic file (type eps)
 
 ] (./gvv_contour.aux) ) 
 Here is how much of TeX's memory you used:
- 7262 strings out of 494946
- 109762 string characters out of 6181058
- 213496 words of memory out of 5000000
- 10443 multiletter control sequences out of 15000+600000
- 60929 words of font info for 145 fonts, out of 8000000 for 9000
+ 7291 strings out of 494946
+ 110222 string characters out of 6181058
+ 214496 words of memory out of 5000000
+ 10470 multiletter control sequences out of 15000+600000
+ 67844 words of font info for 167 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 36i,8n,40p,229b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,8n,40p,229b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_contour.dvi (3 pages, 13928 bytes).
+Output written on gvv_contour.dvi (3 pages, 14116 bytes).
