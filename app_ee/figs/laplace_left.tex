@@ -1,0 +1,33 @@
+%\documentclass[journal,12pt,article]{IEEEtran}
+%\usepackage{tikz}
+%\usetikzlibrary{calc}
+%\usepackage{tkz-euclide}
+%\usetkzobj{all}
+%\begin{document}
+
+
+
+\begin{tikzpicture}
+\draw (11,6) -- (11,6) arc(-100:100:-3) --cycle;
+\draw (10.6,6) -- (10.6,0);
+\draw (7.5,3) -- (15,3);
+
+\draw[thick,<->] (10.6,2) -- (11,2);
+\draw [thick,->](10.6,3) -- (9,5.7);
+
+\node[below right= 1mm of {(10,6.6)}] {$j\infty$};
+\node[below right= 1mm of {(9.6,0.2)}] {$-j\infty$};
+\node[below left= 1mm of {(11.5,3.1)}] {$\sigma$};
+\node[below left= 1mm of {(11,3.34)}] {$\times$};
+\node[below left= 1mm of {(11,3)}] {$0$};
+\node[below left= 1mm of {(16.5,3.3)}] {$\text{Re}(s)$};
+\node[below left= 1mm of {(12.5,1.2)}] {$\text{Im}(s)$};
+\node[below left= 1mm of {(9,3.34)}] {$\times$};
+\node[below left= 1mm of {(9,3)}] {$-1$};
+\node[below left= 1mm of {(14.5,3.34)}] {$\times$};
+\node[below left= 1mm of {(14.5,3)}] {$1$};
+\node[below left= 1mm of {(9.8,5.1)}] {$R\rightarrow\infty$};
+
+
+\end{tikzpicture}
+%\end{document}

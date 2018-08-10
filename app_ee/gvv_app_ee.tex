@@ -48,7 +48,12 @@
     \usepackage{hhline}                                           %%
     \usepackage{ifthen}                                           %%
   %optionally (for landscape tables embedded in another document): %%
-    \usepackage{lscape}     
+    \usepackage{lscape}   
+    \usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+  
 %\usepackage{tikz}
 %\usepackage{tkz-euclide}
 %\usetkzobj{all}
@@ -326,15 +331,35 @@ F(t) =
 \frac{1}{2\pi \j}\ointctrclockwise_{C_2}\frac{e^{st}}{s\brak{1-s^2}}\,ds & t < 0
 \end{cases}
 \end{align}
-where $C_1, C_2$ are the closed contours on the left and right respectively as shown in Fig. \ref{fig:laplace}. Find $F(t)$
+where $C_1, C_2$ are the closed contours on the left and right respectively as shown in Figs. \ref{fig:laplace_left} and \ref{fig:laplace_right}. Find $F(t)$
 given that the ROC of $\frac{M(s)}{s}$ is $0 < \text{Re}\brak{s} < 1$.
 \end{problem}
+%
+\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
 \begin{figure}[!h]
 \centering
-\includegraphics[width=\columnwidth]{./figs/laplace.eps}
+\resizebox {\columnwidth} {!} {
+\input{./figs/laplace_left.tex}
+}
 \caption{}
-\label{fig:laplace}
+\label{fig:laplace_left}
 \end{figure}
+%
+\begin{figure}[!h]
+\centering
+\resizebox {\columnwidth} {!} {
+\input{./figs/laplace_right.tex}
+}
+\caption{}
+\label{fig:laplace_right}
+\end{figure}
+\renewcommand{\thefigure}{\theproblem}
+%\begin{figure}[!h]
+%\centering
+%\includegraphics[width=\columnwidth]{./figs/laplace.eps}
+%\caption{}
+%\label{fig:laplace}
+%\end{figure}
 %
 \section{The Gil-Pelaez Integral}
 \begin{problem}
