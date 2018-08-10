@@ -426,7 +426,7 @@ Show that, if $C:z = \rho e^{\j\theta}, 0 < \theta < 2\pi$ and $z_i \in C, \Delt
 \begin{definition}
 \begin{equation}
 \label{eq:line_int_def}
-\int_C g(z)\,dz = \lim_{\substack{\Delta z_m \to 0 \\ n \to \infty}}\abs{\sum_{m=1}^{n}g(\zeta_m)\Delta z_m} 
+\int_C g(z)\,dz = \lim_{\substack{\Delta z_m \to 0 \\ n \to \infty}}\sum_{m=1}^{n}g(\zeta_m)\Delta z_m
 \end{equation}
 \end{definition}
 \begin{problem}
@@ -439,9 +439,18 @@ Show that
 \begin{problem}
 Show that
 \begin{equation}
+\label{eq:cif}
 \ointctrclockwise_C \frac{f(z)}{z-z_0}\,dz =  2\pi \j f(z_0)
 \end{equation}
 \end{problem}
+\begin{problem}
+By differentiating \eqref{eq:cif} with respect to $z_0$, show that
+\begin{equation}
+\ointctrclockwise_C \frac{f(z)}{\brak{z-z_0}^{n+1}}\,dz =  2\pi \j\frac{f^{(n)}(z_0)}{n!} 
+\end{equation}
+where $f^{(n)}(z)$ is the $n$th derivative of $f(z)$.
+\end{problem}
+
 \section{Cauchy's Integral Theorem}
 \begin{definition}
  The  derivative of $f(z)$ is defined as

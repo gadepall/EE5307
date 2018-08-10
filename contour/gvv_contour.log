@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.7.30)  7 AUG 2018 18:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.7.30)  10 AUG 2018 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,19 +730,10 @@ LaTeX Warning: Command \j invalid in math mode on input line 368.
 LaTeX Warning: Command \j invalid in math mode on input line 421.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 442.
+LaTeX Warning: Command \j invalid in math mode on input line 443.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 454.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 454.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 459.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 459.
+LaTeX Warning: Command \j invalid in math mode on input line 449.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 463.
@@ -751,10 +742,22 @@ LaTeX Warning: Command \j invalid in math mode on input line 463.
 LaTeX Warning: Command \j invalid in math mode on input line 463.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 482.
+LaTeX Warning: Command \j invalid in math mode on input line 468.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 482.
+LaTeX Warning: Command \j invalid in math mode on input line 468.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 472.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 472.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 491.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 491.
 
 [2]
 File: ./figs/CT.eps Graphic file (type eps)
@@ -762,12 +765,12 @@ File: ./figs/CT.eps Graphic file (type eps)
 
 ] (./gvv_contour.aux) ) 
 Here is how much of TeX's memory you used:
- 7291 strings out of 494946
- 110222 string characters out of 6181058
+ 7292 strings out of 494946
+ 110230 string characters out of 6181058
  214496 words of memory out of 5000000
- 10470 multiletter control sequences out of 15000+600000
+ 10471 multiletter control sequences out of 15000+600000
  67844 words of font info for 167 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  36i,8n,40p,229b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_contour.dvi (3 pages, 14116 bytes).
+Output written on gvv_contour.dvi (3 pages, 14528 bytes).
