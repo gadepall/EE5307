@@ -371,29 +371,41 @@ F(t) = \frac{1}{2}-\frac{1}{2\pi\j}\times \text{c.p.v.}\int_{-\infty}^{\infty}\f
 where c.p.v. denotes the Cauchy Principal Value. Use the contour in Fig. \ref{fig:origin_contour} to evaluate $F(t), t < 0$
 by showing that
 \begin{enumerate}
+\setlength\itemsep{0.5em}
 \item
-\begin{multline}
+$\begin{multlined}[t]
 \lim_{r\to 0}\int_{C_r}\frac{e^{-\j zt}}{z\brak{1+z^2}}\,dz = -\j\pi, 
 \\
 C_r: z = re^{\j\theta}, 0 < \theta < \pi
-\end{multline}
+\end{multlined}$
+\\
 where $C_r$ is in the clockwise direction.
 \item 
-\begin{multline}
+$\begin{multlined}[t]
 \lim_{\substack{r\to 0 \\ R \to \infty}}\int_{-R}^{-r}\frac{e^{-\j\omega t}}{\omega\brak{1+\omega^2}}\,d\omega
 +
 \int_{r}^{R}\frac{e^{-\j\omega t}}{\omega\brak{1+\omega^2}}\,d\omega 
 \\
 = \j\pi + \ointctrclockwise_{C}\frac{e^{-\j zt}}{z\brak{1+z^2}}\,dz
-\end{multline}
+\end{multlined}$
 \end{enumerate}
 \end{problem}	
+%
 \begin{figure}[!h]
 \centering
-\includegraphics[width=\columnwidth]{./figs/origin_contour.ps}
+\resizebox {\columnwidth} {!} {
+\input{./figs/origin_contour.tex}
+}
 \caption{}
 \label{fig:origin_contour}
 \end{figure}
+
+%\begin{figure}[!h]
+%\centering
+%\includegraphics[width=\columnwidth]{./figs/origin_contour.ps}
+%\caption{}
+%\label{fig:origin_contour}
+%\end{figure}
 \begin{problem}
 Using a suitable contour, evaluate $F(t), t > 0$.
 \end{problem}

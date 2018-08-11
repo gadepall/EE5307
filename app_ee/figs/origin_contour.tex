@@ -1,0 +1,61 @@
+%\documentclass[journal,12pt,article]{IEEEtran}
+%\usepackage{tikz}
+%\usepackage{amsmath}
+%\usetikzlibrary{calc}
+%\usepackage{tkz-euclide}
+%\usetkzobj{all}
+%\usetikzlibrary{arrows,shapes,decorations.markings,positioning}
+%\begin{document}
+
+
+
+
+\begin{tikzpicture}
+\draw (0,-1) -- (0,5); 
+%\draw (-5,0.65) -- (5,0.65); 
+\def\Radius{3}
+  \path
+    (-\Radius, 1) coordinate (A)
+    -- coordinate (M)
+    (\Radius, 0) coordinate (B)
+    (M) +(60:\Radius) coordinate (C)
+    +(2:\Radius) coordinate (D)
+  ;
+\draw[
+      very thick,  decoration={markings, mark=at position -0.84 with {\arrow{>}}},
+        postaction={decorate}
+        ]  
+(D) arc(0:180:\Radius) -- cycle;
+
+\def\Radius{1.3}
+  \path
+    (-\Radius, 1) coordinate (A)
+    -- coordinate (M)
+    (\Radius, 0) coordinate (B)
+    (M) +(60:\Radius) coordinate (C)
+    +(4:\Radius) coordinate (D)
+  ;
+
+\draw[
+      very thick,  decoration={markings, mark=at position 0.44 with {\arrow{<}}},
+        postaction={decorate}
+        ]  
+
+ (D) arc(0:180:\Radius) -- cycle;
+  
+\begin{scope}[very thick,decoration={markings,mark=at position 0.8 with {\arrow{>}}}]
+\begin{scope}[very thick,decoration={markings,mark=at position 0.3 with {\arrow{>}}}] 
+\draw[postaction={decorate}] (-4,0.6)--(4,0.6);
+\node[below right= 1mm of {(-0.7,5.5)}] {$\text{Im}(z)$};
+\node[below right= 1mm of {(-3.7,0.7)}] {$-R$};
+\node[below right= 1mm of {(-2,0.7)}] {$-r$};
+\node[below right= 1mm of {(-0.5,0.7)}] {$0$};
+\node[below right= 1mm of {(1,0.7)}] {$r$};
+\node[below right= 1mm of {(2.7,0.7)}] {$R$};
+\node[below right= 1mm of {(4,1.1)}] {$\text{Re}(z)$};
+\node[below right= 1mm of {(1.8,3.5)}] {$C_{R}$};
+\node[below right= 1mm of {(-1.7,2)}] {$C_{r}$};
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+%\end{document}

@@ -130,7 +130,7 @@ breaklines=true
 \newtheorem{rem}{Remark}
 \newcommand{\sgn}{\mathop{\mathrm{sgn}}}
 \providecommand{\abs}[1]{\left\vert#1\right\vert}
-\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\res}[1]{\Res\limits_{#1}} 
 \providecommand{\norm}[1]{\lVert#1\rVert}
 \providecommand{\mtx}[1]{\mathbf{#1}}
 \providecommand{\mean}[1]{E\left[ #1 \right]}
@@ -232,7 +232,7 @@ GATE problems in Complex Analysis
 %\tableofcontents
 
 \begin{abstract}
-This manual provides applications of Complex Analysis in Electrical Engineering.
+This manual has problems on Complex Analysis taken from GATE papers in Mathematics and Electronics and Communication Engineering. 
 %
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
@@ -269,7 +269,7 @@ This manual provides applications of Complex Analysis in Electrical Engineering.
 \renewcommand{\thefigure}{\theenumi}
 \begin{enumerate}[1.]
 \item The contour $C$ given below is on the complex plane $z = x + \j y$.
-Find the value of the integral $\dfrac{1}{\pi\j}\oint_{C}\dfrac{dz}{z^2-1}$.
+Find the value of the integral $\dfrac{1}{\pi\j}\oint\limits_{C}\dfrac{dz}{z^2-1}$.
 %
 \begin{figure}[!h]
 \centering
@@ -279,7 +279,7 @@ Find the value of the integral $\dfrac{1}{\pi\j}\oint_{C}\dfrac{dz}{z^2-1}$.
 \end{figure}
 \item An integral $I$  is given by 
 \begin{equation}
-I = \ointctrclockwise_{C}\frac{z^2-1}{z^2+1} e^z\,dz.
+I = \ointctrclockwise\limits_{C}\frac{z^2-1}{z^2+1} e^z\,dz.
 \end{equation}
 If $C: \abs{z} = 3$, find the value of $I$.
 %\item Let $C:\abs{z} = 1$.  Find
@@ -291,23 +291,23 @@ NOT true?
 \begin{enumerate}
 \setlength\itemsep{0.5em}
 \item The residue of $\frac{z}{z^2-1}$ at $z = 1$ is $\frac{1}{2}$.
-\item $\ointctrclockwise_{C}z^2\,dz = 0$
-\item $\frac{1}{2\pi\j}\ointctrclockwise_{C}\frac{dz}{z}= 1$.
+\item $\ointctrclockwise\limits_{C}z^2\,dz = 0$
+\item $\frac{1}{2\pi\j}\ointctrclockwise\limits_{C}\frac{dz}{z}= 1$.
 \item $\bar{z}$ is an analytic function.
 \end{enumerate}
 \item Find the value of 
 \begin{equation}
-\ointctrclockwise_{C}\frac{z^2-z+4\j}{z+2\j}\,dz, \quad C:\abs{z} = 3.
+\ointctrclockwise\limits_{C}\frac{z^2-z+4\j}{z+2\j}\,dz, \quad C:\abs{z} = 3.
 \end{equation}
 \item Given 
 \begin{equation}
 f(z) = \frac{1}{z+1}-\frac{2}{z+3}.
 \end{equation}
 %
-If $\abs{z+1} = 1 $, find $\frac{1}{2\pi\j}\ointctrclockwise_{C}f(z)\,dz$.
+If $\abs{z+1} = 1 $, find $\frac{1}{2\pi\j}\ointctrclockwise\limits_{C}f(z)\,dz$.
 \item Find 
 \begin{equation}
-\ointctrclockwise_{C}\frac{-3z+4}{z^2+4z+5}\,dz, \quad C:\abs{z} = 1
+\ointctrclockwise\limits_{C}\frac{-3z+4}{z^2+4z+5}\,dz, \quad C:\abs{z} = 1
 \end{equation}
 \item Find the residues of a complex function 
 \begin{equation}
@@ -316,701 +316,1020 @@ X(z) = \frac{1-12z}{z\brak{z-1}\brak{z-2}}
 at its poles.
 \item If $f(z) = c+0+c_1z^{-1}$, find
 \begin{equation}
-\ointctrclockwise_{C}\frac{1+f(z)}{z}\,dz, \quad C: \abs{z} = 1
+\ointctrclockwise\limits_{C}\frac{1+f(z)}{z}\,dz, \quad C: \abs{z} = 1
 \end{equation} 
 \item Find the residue of the function
 \begin{equation}
 f(z) = \frac{1}{\brak{z+2}^2\brak{z-2}^2}
 \end{equation}
 at $z = 2$.
-\item If the semi-circular contour $D$ of radius 2 is as shown in the figure, then find
+\item If the semi-circular contour $D$ of radius 2 is as shown in Fig. \ref{fig:ec2007}, then find
 \begin{equation}
-\ointctrclockwise_{D}\frac{dz}{z^2+4}
+\ointctrclockwise\limits_{D}\frac{dz}{z^2+4}
 \end{equation}
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=\columnwidth]{./figs/ec2007.eps}
+\resizebox {\columnwidth} {!} {
+\input{./figs/ec2007.tex}
+}
 \caption{}
-\label{fig:ec2018}
+\label{fig:ec2007}
 \end{figure}
+
+%\begin{figure}[!h]
+%\centering
+%\includegraphics[width=\columnwidth]{./figs/ec2007.eps}
+%\caption{}
+%\label{fig:ec2018}
+%\end{figure}
 \item Find
 \begin{equation}
-\ointctrclockwise_{\abs{z-j}=2}\frac{1}{z^2-1}\,ds
+\ointctrclockwise\limits_{\abs{z-j}=2}\frac{1}{z^2-1}\,ds
 \end{equation}
+
+\item Find $\res{z=0} \frac{\sin z}{z^8}$
+
+
+\item Let $\Gamma$ denote the boundary of the square whose sides lies along $ x= \pm 1$ and $y= \pm 1$, where $\Gamma$ is described in the positive sense.
+Find
+\begin{equation}
+\ointctrclockwise\limits_{\Gamma}\frac{z^2}{2z + 3} dz
+\end{equation}
+%Then the value of $ \int\limits_{\Gamma}$ is
+%
+%\begin{enumerate}[(A)]
+%
+%\item $
+%\frac{\pi i}{4}
+%$
+%
+%\item $
+%2 \pi i
+%$
+%
+%\item $
+%0$
+%
+%\item $
+%-2 \pi i
+%$
+%
+%\end{enumerate}
+
+\item Evaluate $\int\limits_{0}^{2 \pi} \frac{d \theta}{a+b \cos \theta}$
+ %= \frac{2 \pi}{\sqrt{a^2+b^2}}, a>b>0. $
+
+\item For the function $f(z)=\frac{1-e^{-z}}{z}$, the point $z=0$ is
+
+
+\begin{enumerate}%[(A)]
+
+\item 
+an essential singularity
+
+\item 
+a pole of order zero
+
+\item 
+a pole of order one
+
+\item 
+a removable singularity
+
 \end{enumerate}
 
-%\section{The Inverse Z Transform}
-%\begin{problem}
-%Show that $z^{n}$ is analytic everywhere for $n \ge 0$.
-%\end{problem}
-%\begin{problem}
-%Show that for $C: z = Re^{\j\theta}, 0 < \theta < 2\pi$,
-%\begin{equation}
-%\ointctrclockwise_C \frac{dz}{z^n} =
-%\begin{cases}
-%2\pi \j & n = 1
-%\\ 
-% 0 & \text{otherwise}
-%\end{cases}
-%\end{equation}
-%\end{problem}
-%\begin{definition}
-%The Z transform of $x(n)$ is defined as
-%\begin{equation}
-%\label{eq:z_def}
-%X(z)=\sum _{k=-\infty }^{\infty }x(k)z^{-k}
-%\end{equation}
-%\end{definition}
-%\begin{problem}
-%Show that
-%\begin{align}
-%\frac{1}{2\pi\j}\ointctrclockwise_C X(z)z^{n-1}\,dz  &=\sum _{k=-\infty }^{\infty }x(k)\ointctrclockwise_C z^{n-k-1}\,dz
-%\\
-%&=x(n)
-%\end{align}
-%\end{problem}
-%\begin{problem}
-%The $Z$ transform of $x(n)$ is given by
-%\begin{equation}
-%X(z) = \frac{z^{20}}{\brak{z-\frac{1}{2}}\brak{z-2}^5\brak{z+\frac{5}{2}}^2\brak{z+3}}
-%\end{equation}
-%Also, it is known that $X(z)$ is analytic for $\abs{z} = 1$. Find $x(-18)$.
-%\end{problem}
-%\section{The Laplace Transform}
-%\begin{problem}
-%Let
-%\begin{equation}
-%\int_{-\infty}^{\infty}F(t)e^{-st}\,dt = \frac{1}{s\brak{1-s^2}} = \frac{M(s)}{s}, \quad s = \sigma + \j \omega
-%\end{equation}
-%Using the inverse fourier transform relationship, show that
-%\begin{equation}
-%\label{eq:laplace_key}
-%F(t)e^{-\sigma t} = \frac{1}{2\pi}\int_{-\infty}^{\infty}\frac{e^{\j\omega t}}{s\brak{1-s^2}}\,d\omega
-%\end{equation}
-%\end{problem}
-%%
-%\begin{problem}
-%Show that
-%\begin{equation}
-%F(t) = \frac{1}{2\pi \j}\int_{\sigma - \j \infty}^{\sigma + \j \infty}\frac{e^{s t}}{s\brak{1-s^2}}\,ds
-%\end{equation}
-%\end{problem}
-%\begin{problem}
-%Let
-%\begin{align}
-%F(t) = 
-%\begin{cases}
-%\frac{1}{2\pi \j}\ointctrclockwise_{C_1}\frac{e^{st}}{s\brak{1-s^2}}\,ds & t > 0
-%\\
-%\frac{1}{2\pi \j}\ointctrclockwise_{C_2}\frac{e^{st}}{s\brak{1-s^2}}\,ds & t < 0
-%\end{cases}
-%\end{align}
-%where $C_1, C_2$ are the closed contours on the left and right respectively as shown in Figs. \ref{fig:laplace_left} and \ref{fig:laplace_right}. Find $F(t)$
-%given that the ROC of $\frac{M(s)}{s}$ is $0 < \text{Re}\brak{s} < 1$.
-%\end{problem}
-%%
-%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
-%\begin{figure}[!h]
-%\centering
-%\resizebox {\columnwidth} {!} {
-%\input{./figs/laplace_left.tex}
-%}
-%\caption{}
-%\label{fig:laplace_left}
-%\end{figure}
-%%
-%\begin{figure}[!h]
-%\centering
-%\resizebox {\columnwidth} {!} {
-%\input{./figs/laplace_right.tex}
-%}
-%\caption{}
-%\label{fig:laplace_right}
-%\end{figure}
-%\renewcommand{\thefigure}{\theproblem}
-%%
-%\section{The Gil-Pelaez Integral}
-%\begin{problem}
-%Let
-%\begin{equation}
-%\label{eq:gil}
-%F(t) = \frac{1}{2}-\frac{1}{2\pi\j}\times \text{c.p.v.}\int_{-\infty}^{\infty}\frac{e^{-\j\omega t}}{\omega\brak{1+\omega^2}}\,d\omega,
-%\end{equation}
-%where c.p.v. denotes the Cauchy Principal Value. Use the contour in Fig. \ref{fig:origin_contour} to evaluate $F(t), t < 0$
-%by showing that
-%\begin{enumerate}
-%\item
-%\begin{multline}
-%\lim_{r\to 0}\int_{C_r}\frac{e^{-\j zt}}{z\brak{1+z^2}}\,dz = -\j\pi, 
-%\\
-%C_r: z = re^{\j\theta}, 0 < \theta < \pi
-%\end{multline}
-%where $C_r$ is in the clockwise direction.
-%\item 
-%\begin{multline}
-%\lim_{\substack{r\to 0 \\ R \to \infty}}\int_{-R}^{-r}\frac{e^{-\j\omega t}}{\omega\brak{1+\omega^2}}\,d\omega
-%+
-%\int_{r}^{R}\frac{e^{-\j\omega t}}{\omega\brak{1+\omega^2}}\,d\omega 
-%\\
-%= \j\pi + \ointctrclockwise_{C}\frac{e^{-\j zt}}{z\brak{1+z^2}}\,dz
-%\end{multline}
+\item Find
+\begin{equation}
+\ointctrclockwise\limits_{\abs{z}=4} \frac{dz}{z^2-1}
+\end{equation}
+
+%The value of the integral $ \oint\limits_{c} \frac{dz}{z^2-1}$, $ C :\ \mid z \mid =4$ is equal to
+%
+%\begin{enumerate}[(A)]
+%
+%\item $
+%\pi i
+%$
+%
+%\item $
+%0
+%$
+%
+%\item $
+%- \pi i
+%$
+%
+%\item $
+%2 \pi i
+%$
+%
 %\end{enumerate}
-%\end{problem}	
-%\begin{figure}[!h]
-%\centering
-%\includegraphics[width=\columnwidth]{./figs/origin_contour.ps}
-%\caption{}
-%\label{fig:origin_contour}
-%\end{figure}
-%\begin{problem}
-%Using a suitable contour, evaluate $F(t), t > 0$.
-%\end{problem}
-%%\section{Contour Integration}
-%%%
-%%In Fig. \ref{fig:contour}, let $z = x + \j y, C = C_1+C_2$. It is obvious that the line integral in the anti-clockwise direction
-%%\begin{equation}
-%%\ointctrclockwise_C \frac{e^{-\j zt}}{1+z^2}\,dz = \int_{C_1} \frac{e^{-\j z t}}{1+z^2}\,dz + \int_{C_2} \frac{e^{-\j zt}}{1+z^2}\,dz
-%%\end{equation}
-%%%
-%%The symbol on the integral on the LHS shows that the integration is over a closed path in the anti-clockwise direction.
-%%\begin{problem}
-%%Show that
-%%\begin{equation}
-%%\int_{C_1} \frac{e^{-\j z t}}{1+z^2}\,dx = \int_{-R}^{R} \frac{e^{-\j x t}}{1+x^2}\,dx
-%%\end{equation}
-%%\end{problem}
-%%
-%%%
-%%\begin{figure}[!h]
-%%\centering
-%%\includegraphics[width=\columnwidth]{./figs/contour.eps}
-%%\caption{}
-%%\label{fig:contour}
-%%\end{figure}
-%%%
-%%
-%%%\begin{figure}[!h]
-%%%\centering
-%%%\resizebox {\columnwidth} {!} {
-%%%\input{./figs/contour.tex}
-%%%}
-%%%\caption{}
-%%%\label{fig:contour}
-%%%\end{figure}
-%%\begin{problem}
-%%Show that
-%%\begin{equation}
-%%\lim_{R\to \infty}\abs{ \frac{e^{-\j zt}}{1+z^2}} = 0, \quad t < 0
-%%\end{equation}
-%%by substituting $z = Re^{\j \theta}, 0 < \theta < \pi$.
-%%\end{problem}
-%%%
-%%\begin{problem}
-%%Let $C$ be a closed curve within the curve $T$.  Then given that
-%%\begin{equation}
-%%\ointctrclockwise_C \frac{e^{-\j zt}}{1+z^2}\,dz = \ointctrclockwise_T \frac{e^{-\j zt}}{1+z^2}\,dz,
-%%\end{equation}
-%%show that
-%%\begin{equation}
-%%\ointctrclockwise_C \frac{e^{-\j zt}}{1+z^2}\,dz = \int_{-\infty}^{\infty} \frac{e^{-\j x t}}{1+x^2}\,dx, \quad t < 0
-%%\end{equation}
-%%\end{problem}
-%%\begin{problem}
-%%Given that
-%%\begin{equation}
-%%\ointctrclockwise_C \frac{f(z)}{z-z_0}\,dz = 2\pi \j f(z_0), 
-%%\end{equation}
-%%%
-%%where $z_0$ is within $C$, show that
-%%\begin{equation}
-%%\ointctrclockwise_C \frac{e^{-\j zt}}{1+z^2}\,dz = \pi e^t \quad t < 0
-%%\end{equation}
-%%\end{problem}
-%%\begin{problem}
-%%Now find 
-%%\begin{equation}
-%%\int_{-\infty}^{\infty} \frac{e^{-\j x t}}{1+x^2}\,dx, \quad t > 0
-%%\end{equation}
-%%\end{problem}
-%%%
-%%\begin{problem}
-%%Obtain an expression for the probability density function (PDF) of $X$.
-%%\end{problem}
-%%\section{Cauchy's Integral Formula}
-%%\begin{problem}
-%%Show that
-%%\begin{equation}
-%%\ointctrclockwise_C \frac{f(z)}{z-z_0}\,dz =  f(z_0)\ointctrclockwise_C \frac{dz}{z-z_0} + \ointctrclockwise_C \frac{f(z)-f(z_0)}{z-z_0}\,dz
-%%\end{equation}
-%%\end{problem}
-%%\begin{problem}
-%%For $C:z = z_0+\rho e^{\j\theta}, 0 < \theta < \pi$, show that
-%%\begin{equation}
-%%\ointctrclockwise_C \frac{dz}{z-z_0} = 2\pi \j
-%%\end{equation}
-%%\end{problem}
-%%%
-%%\begin{problem}
-%%Let
-%%\begin{equation}
-%%\abs{\frac{f(z)-f(z_0)}{z-z_0} - K} < \delta \implies \abs{z-z_0} < \epsilon
-%%\end{equation}
-%%for some $\epsilon, \delta > 0$.  
-%%\begin{enumerate}
-%%\item
-%%Show that 
-%%\begin{equation}
-%%\abs{f(z)-Kz -f(z_0)+Kz_0} < \epsilon\delta
-%%\end{equation}
-%%\item Let
-%%\begin{align}
-%%f_1(z) &=  f(z)-Kz
-%%\\
-%%f_2(z) &= Kz 
-%%\end{align}
-%%Show that 
-%%\begin{multline}
-%%\abs{f_1(z)+f_2(z)-f_1(z_0)-f_2(z_0)} 
-%%\\
-%%= \abs{f(z)-f(z_0)} < \kappa 
-%%\end{multline}
-%%%Let $f_1(z),f_2(z)$ be two functions such that
-%%%\begin{align}
-%%%\abs{f_1(z)-f_1(z_0)} < \delta_1 \implies \abs{z-z_0} < \epsilon_1
-%%%\\
-%%%\abs{f_1(z)-f_1(z_0)} < \delta_1 \implies \abs{z-z_0} < \epsilon_1
-%%%\end{align}
-%%\item Let
-%%\begin{equation}
-%%g(z)=\abs{\frac{f(z)-f(z_0)}{z-z_0} - K}
-%%\end{equation}
-%%\end{enumerate}
-%%%\begin{equation}
-%%%\abs{f(z)-f(z_0)} < \delta_1 \implies \abs{z-z_0} < \epsilon_1, \quad \epsilon_1, \delta_1 > 0
-%%%\end{equation}
-%%\end{problem}
-%%\begin{problem}
-%%Let 
-%%\begin{equation}
-%%\abs{g(z)} < \frac{\epsilon}{\rho}
-%%\end{equation}
-%%Show that, if $C:z = \rho e^{\j\theta}, 0 < \theta < 2\pi$ and $z_i \in C, \Delta z_m = z_m - z_{m-1}, \zeta_m \in \brak{z_{n-1},z_{n}}$,
-%%\begin{equation}
-%%\abs{\sum_{m=1}^{n}g(\zeta_m)\Delta z_m} < 2\pi\epsilon
-%%\end{equation}
-%%\end{problem}
-%%\begin{definition}
-%%\begin{equation}
-%%\label{eq:line_int_def}
-%%\int_C g(z)\,dz = \lim_{\substack{\Delta z_m \to 0 \\ n \to \infty}}\abs{\sum_{m=1}^{n}g(\zeta_m)\Delta z_m} 
-%%\end{equation}
-%%\end{definition}
-%%\begin{problem}
-%%Show that 
-%%\begin{equation}
-%%\abs{\int_C \frac{f(z)-f(z_0)}{z-z_0}\,dz} < 2\pi\epsilon
-%%\end{equation}
-%%%
-%%\end{problem}
-%%\begin{problem}
-%%Show that
-%%\begin{equation}
-%%\ointctrclockwise_C \frac{f(z)}{z-z_0}\,dz =  2\pi \j f(z_0)
-%%\end{equation}
-%%\end{problem}
-%%\section{Cauchy's Integral Theorem}
-%%\begin{definition}
-%% The  derivative of $f(z)$ is defined as
-%%\begin{equation}
-%%\lim_{\Delta z \to 0} \frac{f(z+\Delta z)-f(z)}{\Delta z}
-%%\end{equation}
-%%$f(z)$ is said to be {\em analytic} if its derivative exists.
-%%\end{definition}
-%%\begin{problem}
-%%Let $z = x + \j y, \Delta z = \Delta x + \Delta y, f(z) = u(x,y)+\j v(x,y)$. 
-%%\begin{enumerate}
-%%\item By letting $\Delta y \to 0$ followed by $\Delta x \to 0$, show that
-%%\begin{align}
-%%f^{\prime}(z) = \frac{\partial u}{\partial x} + \j \frac{\partial v}{\partial x}
-%%\end{align}
-%%\item By letting $\Delta x \to 0$ followed by $\Delta y \to 0$, show that
-%%\begin{align}
-%%f^{\prime}(z) = \frac{\partial v}{\partial y} - \j \frac{\partial u}{\partial y}
-%%\end{align}
-%%\end{enumerate}
-%%\end{problem}
-%%\begin{problem}
-%%Show that
-%%\begin{align}
-%%\frac{\partial u}{\partial x} &= \frac{\partial v}{\partial y}
-%%\\
-%%\frac{\partial u}{\partial y} &= -\frac{\partial v}{\partial x}
-%%\end{align}
-%%These are known as the {\em Cauchy-Riemann} equations.
-%%\end{problem}
-%%%
-%%\begin{problem}
-%%Using \eqref{eq:line_int_def}, show that
-%%\begin{multline}
-%%\oint_{C}f(z)\,dz = \oint_{C}\brak{u\,dx- v\,dy }
-%%\\
-%%+ \j \oint_{C}\brak{u\,dy+v\,dx}
-%%\end{multline}
-%%\end{problem}
-%%\begin{problem}
-%%According to {\em Green's Theorem}, for a closed curve $C$,
-%%\begin{equation}
-%%\oint_{C}\brak{u\,dx- v\,dy} = \iint_{R} \brak{-\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}}\,dx\,dy
-%%\end{equation}
-%%where $R$ is bounded by $C$.  Show that
-%%\begin{equation}
-%%\oint_{C}f(z)\,dz  = 0.
-%%\end{equation}
-%%assuming that $f(z)$ is analytic everywhere inside $C$.
-%%\end{problem}
-%%%
-%%\begin{problem}
-%%In Fig. \ref{fig:CT},  show that 
-%%\begin{equation}
-%%\oint_{C}f(z)\,dz = \oint_{T}f(z)\,dz
-%%\end{equation}
-%%given that $f(z)$ is analytic in the region between $C-T$.
-%%\end{problem}
-%%\begin{figure}[!h]
-%%\centering
-%%\includegraphics[width=\columnwidth]{./figs/CT.eps}
-%%\caption{}
-%%\label{fig:CT}
-%%\end{figure}
-%%
-%%\begin{problem}
-%%The PDf of an exponential random variable $X$ is defined as
-%%%
-%%\begin{equation}
-%%p_{X}(t) = 
-%%\begin{cases}
-%%\frac{1}{\gamma}e^{-\frac{t}{\gamma}} & t \geq 0 \\
-%%0 & t < 0
-%%\end{cases}
-%%\end{equation}
-%%%
-%%\begin{enumerate}
-%%\item The {\em expectation} of the function $g(X)$ is defined as
-%%%
-%%\begin{equation}
-%%E\sbrak{g(X)} = \int_{\infty}^{\infty} g(t)p_V(t)\, dt
-%%\end{equation}
-%%%
-%%Find $E\sbrak{X}$.
-%%\item The cumulative distribution function (CDF) of $X$ is defined as $F_X(t)=\pr{X > t}$.  Show that the CDF of $X$ is
-%%\begin{equation}
-%%\label{cdf_exp}
-%%F_X(t) = 
-%%\begin{cases}
-%%1 - e^{-\frac{t}{\gamma}} & t \geq 0 \\
-%%0 & t < 0
-%%\end{cases}
-%%\end{equation}
-%%\item The characteristic function of $X$ is defined as $\phi_X(\j \omega)=E\sbrak{e^{\j \omega X}}$.  Show that
-%%%
-%%\begin{equation}
-%%\label{cf_exp}
-%%\phi_{X}\brak{\j \omega} = \frac{1}{1 - \j \omega \gamma}
-%%\end{equation}
-%%%
-%%\item The moment generating function (MGF) of $X$ is defined as $E\sbrak{e^{-s  X}}$.  Show that
-%%%
-%%\begin{equation}
-%%M_{X}\brak{s} = \frac{1}{1 + s \gamma}
-%%\end{equation}
-%%%
-%%\end{enumerate}
-%%\end{problem}
-%%%
-%%\begin{problem}
-%%The PDF of $X$ can be {\em recovered} from the CF using the following formula
-%%%
-%%\begin{equation}
-%%p_{X}(x) = \frac{1}{2\pi}\int_{-\infty}^{\infty}\phi_{X}\brak{\j\omega}e^{-\j \omega x}d\omega
-%%\label{pdf_inv_exp}
-%%\end{equation}
-%%since the PDF and CF are governed by the {\em Fourier Transform} relationship.
-%%%
-%%\begin{enumerate}
-%%\item Show that  $p_{X}$  in \eqref{pdf_inv_exp} can be expressed as
-%%\begin{equation}
-%%p_{X}(t) = \frac{1}{2\pi \j}\int_{-\j\infty}^{\j\infty}\frac{f(z)}{1 - z \gamma}dz
-%%%\label{pdf_inv_exp}
-%%\end{equation}
-%%where $f(z) = e^{-zt}$.
-%%\item Let $z = x + \j y$, where $x$ and $y$ are real variables. If $f(z) =  u(x,y)+\j v(x,y)$, show that
-%%%
-%%\begin{equation}
-%%\begin{split}
-%%u(x,y) &= e^{-xt}\cos(ty) \\
-%%v(x,y) &= -e^{-xt}\sin(ty) \\
-%%\end{split}
-%%\end{equation}
-%%%
-%%\item Show that
-%%\begin{equation}
-%%\begin{split}{\frac {\partial u}{\partial x}}&={\frac {\partial v}{\partial y}}
-%%\\
-%%{\frac {\partial u}{\partial y}}&=-{\frac {\partial v}{\partial x}}\end{split}
-%%\end{equation}
-%%The above equations are known as the {\em Cauchy-Reimann} equations and any function $f$ that satisfies the above equations is known as an {\em Analytic function}.
-%%\item Let $C$ be the unit circle with centre at $\frac{1}{\gamma}$ defined as $C:z = \frac{1}{\gamma} + e^{\j \theta}, 0 < \theta < 2\pi$. Show that
-%%%
-%%\begin{equation}
-%%\ointctrclockwise_{C}\frac{dz}{1-z\gamma} = -\frac{2\pi\j}{\gamma}
-%%\end{equation}
-%%%
-%%through a change of variables in terms of $\theta$.  The integral on the L.H.S. above is known as a {\em contour integral}.  Note that the direction of integration is clockwise.
-%%\item Let 
-%%\begin{equation}
-%%g(z) = \frac{f(z) - f\brak{\frac{1}{\gamma}}}{z - \frac{1}{\gamma}}
-%%\end{equation}
-%%%
-%%Show that $g(z)$ is analytic for $z \neq \frac{1}{\gamma}$.
-%%\item An analytic function is also continuous. Show that
-%%%\begin{enumerate}
-%% $\abs{g(z)} < \frac{\epsilon}{\delta}$
-%%\item Let $K: z = \frac{1}{\gamma} + \rho e^{\j \theta}, 0 < \theta \leq 2\pi $.  If 
-%%%
-%%\begin{equation}
-%%\ointctrclockwise_{K}g(z)\,dz \triangleq \sum_{k} g(z_k)\Delta z_k,
-%%\end{equation}
-%%%
-%%show that 
-%%%
-%%\begin{equation}
-%%\abs{\ointctrclockwise_{K} g(z)} < 2\pi \epsilon
-%%\end{equation}
-%%%
-%%\item If 
-%%\begin{equation}
-%%\ointctrclockwise_{C}\frac{f(z)}{1 - z \gamma}dz = \ointctrclockwise_{K}\frac{f(z)}{1 - z \gamma}dz,
-%%\end{equation}
-%%show that
-%%\begin{equation}
-%%\ointctrclockwise_{C}\frac{f(z)}{1 - z \gamma}dz = -\frac{2\pi\j}{\gamma}f\brak{\frac{1}{\gamma}}
-%%\end{equation}
-%%\item Let $D: R e^{\j \theta}, -\frac{\pi}{2} < \theta < \frac{\pi}{2}$.  Show that
-%%%
-%%\begin{equation}
-%%\lim_{R \rightarrow \infty} \int_{D}\frac{f(z)}{1 - z \gamma}dz = 0
-%%\end{equation}
-%%%
-%%\item Show that
-%%%
-%%\begin{align}
-%%p_{X}(t) = \frac{1}{\gamma} e^{-\frac{t}{\gamma}} \quad  t \geq 0
-%%\end{align}
-%%%
-%%\item Show that
-%%%
-%%\begin{align}
-%%p_{X}(t) = 0  \quad  t < 0
-%%\end{align}
-%%%
-%%\end{enumerate}
-%%%
-%%%
-%%%\end{enumerate} 
-%%\end{problem}
-%%%
-%%\begin{problem}
-%%\begin{enumerate}
-%%The Fourier transform of the unit step function $u(t)$ is
-%%%
-%%\begin{align}
-%%\int_{-\infty}^{\infty}u(t)e^{\j\omega t} = \frac{\delta(\omega)}{2} +\frac{\j}{\omega}
-%%\end{align}
-%%%
-%%\item Show that the CDF of a random variable $X$ can be expressed in terms of its CF
-%%$\phi_{X}\brak{\omega}$ as
-%%%
-%%\begin{align}
-%%\label{gil}
-%%F_{X}(x) = \frac{1}{2}-\frac{1}{2\pi\j}\int_{-\infty}^{\infty}\frac{\phi_{X}\brak{\omega}}{\omega}e^{-\j\omega x}\,d\omega
-%%\end{align}
-%%This is known as the Gil-Pelaez formula.
-%%%\item Show that
-%%%\begin{equation}
-%%%F_{X}(x)={\frac {1}{2}}-{\frac {1}{\pi }}\int _{0}^{\infty }{\frac {\operatorname {Im} [e^{-\j tx}\phi _{X}(t)]}{t}}\,dt.
-%%%\end{equation}
-%%\item Using the above relation, obtain the CDF in  \eqref{cdf_exp} using contour integration.  You may express \eqref{gil} as
-%%\begin{multline}
-%%\label{gilpv}
-%%F_{X}(x) = \frac{1}{2}-\frac{1}{2\pi\j}\lim_{\substack {r\rightarrow 0 \\ R\rightarrow \infty} }\lsbrak{\int_{-R}^{r}\frac{\phi_{X}\brak{\omega}}{\omega}e^{-\j\omega x}\,d\omega} 
-%%\\
-%%+ \rsbrak{\int_{r}^{R}\frac{\phi_{X}\brak{\omega}}{\omega}e^{-\j\omega x}\,d\omega}
-%%\end{multline}
-%%\end{enumerate}
-%%\end{problem}
-%%\begin{problem}
-%%Repeat the above exercises using the MGF instead of the CDF
-%%\end{problem}
-%%The Moment Generating Function (MGF) of $X$ is defined as
-%%%
-%%\begin{align}
-%%M_{X}(s) = E\sbrak{e^{s X}}
-%%\end{align}
-%%%
-%%where $X$ is a random variable and $E\sbrak{\cdot}$ is the expectation.  
-%%%
-%%%
-%%\begin{enumerate}
-%%\item Let $Y \sim \gauss{0}{1}$.  Define
-%%%
-%%\begin{align}
-%%Q(x) = \pr{Y > x}, x > 0
-%%\end{align}
-%%%
-%%Show that
-%%\begin{equation}
-%%Q(x) = \frac{1}{\pi}\int^{\frac{\pi}{2}}_{0}e^{-\frac{x^2}{2\sin^2 \theta}}\,d\theta
-%%\end{equation}
-%%\item 
-%%Let $h\sim\mathcal{CN}\brak{0,\frac{\Omega}{2}},n\sim\mathcal{CN}\brak{0,\frac{N_0}{2}}$.  Find the distribution of $\abs{h}^2$.
+
+\item Evaluate 
+\begin{equation}
+\ointctrclockwise\limits_{\abs{z-\j}=\frac{7}{2}} \frac{e^{\frac{1}{z^2}}}{z^2+1}dz
+\end{equation}
+
+%the integral $\int\limits_{C}\frac{e^{\frac{1}{z^2}}}{z^2+1} dz ;\ C : \ \mid z-i \mid = \frac{7}{2} $ ,where integration is to be taken counterclockwise.
+
+\item Construct an analytic function $f(z)$ of which the real part is
+$u(x,y)=2xy+ \cos hx \sin y $ , given that $f(0)=0$.
+
+\item The function $ \sin z$ is analytic in
+
+\begin{enumerate}
+
+\item $
+C \cup \lbrace \infty \rbrace
+$
+
+\item 
+$C$ except on the negative real axis.
+
+\item $
+C-\lbrace 0 \rbrace
+$
+
+\item $
+C
+$
+
+\end{enumerate}
+                                                                                                                                                                        
+\item If $f(z)=z^3$ , then it
+
+\begin{enumerate}[(A)]
+
+\item 
+has an essential singularity at $z=\infty$
+
+\item 
+has a pole of order $3$ at $z=\infty$
+
+\item 
+has a pole of order $3$ at $z=0$
+
+\item 
+is analytic at $z=\infty$
+
+\end{enumerate}
+
+\item The function $f(z) = {\mid z \mid}^2 $ is
+
+
+\begin{enumerate}
+
+\item 
+differentiable everywhere
+
+\item 
+differentiable only at the origin
+
+\item 
+not differentiable anywhere
+
+\item 
+differentiable on real x-axis
+
+\end{enumerate}
+
+\item Evaluate
+
+$\int\limits_{- \infty}^{\infty} \frac{x \sin \pi x}{x^2+2x+5} dx $
+
+using the method of residues.
+
+\item Let $T$ be any circle enclosing the origin and oriented counter-clockwise.
+Find $ \int\limits_{\Gamma} \frac{\cos z}{z^2} dz $ 
+
+%\begin{enumerate}
 %
-%%\item Let
-%%%
-%%\begin{align}
-%%P_e = \pr{\Re \cbrak{h^*y} < 0}, \text{ where } y = \brak{\sqrt{E_s}h + n},
-%%\end{align}
-%%%
-%%Show that
-%%%
-%%\begin{align}
-%%P_e = \int_{0}^{\infty}\qfunc{\sqrt{2x}}p_{A}(x) \,dx
-%%\end{align}
-%%where $A = \frac{E_s\abs{h}^2}{N_0}$.
-%%\item Show that
-%%%
-%%\begin{align}
-%%P_e 
-%%%&= E\sbrak{\qfunc{\sqrt{2A}}} \\
-%%%&=  \frac{1}{\pi}\int_{0}^{\frac{\pi}{2}}E\sbrak{e^{-\frac{A}{\sin^2\theta}}}\,d\theta \\
-%%&=  \frac{1}{\pi}\int_{0}^{\frac{\pi}{2}}M_{A}\brak{-\frac{1}{\sin^2\theta}}\,d\theta
-%%\label{ch4_pe_mgf}
-%%\end{align}
-%%%
-%%\item compute $M_A(s)$.
-%%%
-%%\item 
-%%Find $P_e$.
-%%\item 
-%%If $\gamma = \frac{\Omega E_s}{N_0}$, show that $P_e < \frac{1}{2\gamma}$. 
-%%\end{enumerate}
-%%\end{problem}
-%%%
-%%\begin{problem}
-%%Find
-%%%
-%%\begin{align}
-%%\frac{1}{\gamma}\int_{0}^{\infty}\qfunc{\sqrt{2x}}e^{-\frac{x}{\gamma}} \,dx
-%%\end{align}
-%%%
-%%\end{problem}
-%%\begin{problem}
-%%Tthe characteristic function (CF) of a random variable $X$ is defined as
-%%%
-%%\begin{align}
-%%\phi_{X}(\omega) = E\sbrak{e^{\j \omega X}}
-%%\end{align}
-%%%
-%%where $X$ is a random variable and $E\sbrak{\cdot}$ is the expectation.  Show that the characteristic function of $V$, given that its PDF
-%%%
-%%\begin{align}
-%%p_{V}(x)= \frac{1}{\gamma}e^{-\frac{x}{\gamma}}, \quad x > 0, \gamma > 0
-%%\end{align}
-%%%
-%%is
-%%%
-%%\begin{align}
-%%\phi_{V}\brak{\omega} 
-%%%&= \frac{1}{\gamma}\int_{0}^{\infty}e^{\j\omega v}e^{-v/\gamma}\,dv \\
-%%%&= \frac{1}{\gamma}\int_{0}^{\infty}e^{-v\brak{1/\gamma -\j\omega}}\,dv \\
-%%&= \frac{1}{1-\j\omega\gamma}
-%%\end{align}
-%%%
-%%\end{problem}
-%%\begin{problem}
-%%Show that the charactersitic function of $X^2$, where $X \sim \mathcal{N}\brak{0,1}$
-%%is
-%%%
-%%\begin{align}
-%%\phi_{X^2}\brak{\omega} = \frac{1}{\brak{1-2\j\omega}^{\frac{1}{2}}}
-%%\end{align}
-%%%
-%%\end{problem}
-%%\begin{problem}
-%%Find the characteristic function of 
-%%%
-%%\begin{align}
-%%D = X^2-V
-%%\end{align}
-%%\end{problem}
-%%\begin{problem}
-%%Find $A$ and $B$ such that
-%%%
-%%\begin{align}
-%%A &= \sbrak{\phi_{X}\brak{\omega}}_{\omega = 0} \\
-%%B &= \sbrak{\brak{\omega - \frac{j}{\gamma}}\frac{\phi_{X}\brak{\omega}}{\omega}}_{\omega = \frac{\j}{\gamma}}
-%%\end{align}
-%%%
-%%Evaluate
-%%%
-%%\begin{align}
-%%\frac{1}{2}\sbrak{\frac{1}{2} + \frac{1}{2\pi\j}\brak{\j\pi A + 2\pi \j B}}
-%%\end{align}
-%%%
-%%Comment.
-%%\end{problem}
-%%\begin{problem}
-%%The Fourier transform of the unit step function $u(t)$ is
-%%%
-%%\begin{align}
-%%\int_{-\infty}^{\infty}u(t)e^{\j\omega t} = \frac{\delta(\omega)}{2} +\frac{\j}{\omega}
-%%\end{align}
-%%%
-%%Show that the CDF of a random variable $X$ can be expressed in terms of its CF
-%%$\phi_{X}\brak{\omega}$ as
-%%%
-%%\begin{align}
-%%F_{X}(x) = \frac{1}{2}-\frac{1}{2\pi\j}\int_{-\infty}^{\infty}\frac{\phi_{X}\brak{\omega}}{\omega}e^{-\j\omega x}\,d\omega
-%%\end{align}
-%%%
-%%\end{problem}
-%%%
-%%\begin{problem}
-%%Show that
-%%%
-%%\begin{equation}
-%%Q(x) = \frac{1}{\pi}\int_{0}^{\frac{\pi}{2}}e^{-\frac{y^2}{2\sin^2 \theta}}\,d\theta
-%%\end{equation}
-%%%
-%%This is an alternative expression for the $Q$-function.
-%%\end{problem}
+%\item $
+%2 \pi i
+%$
 %
-%%\input{./chapter1/ch1}
-%%
-%%\newpage
-%%\section{Application}
-%%\input{./chapter2/ch2}
-%%\newpage
-%%\section{Binary Modulation}
-%%\input{chapter2} 
-%%
-%%\newpage
-%%\section{$M$-ary Modulation}
-%%\input{chapter3} 
+%\item $
+%0
+%$
 %
-%%\newpage
-%%\section{BER in Rayleigh Flat Slowly Fading Channels}
-%%\input{chapter4} 
+%\item $
+%-2 \pi i
+%$
+%
+%\item 
+%undefined
+%
+%\end{enumerate}
+
+
+\item For the function $f(z) = \sin \frac{1}{z} , z=0 $ is a
+
+\begin{enumerate}
+
+\item 
+removable singularity
+
+\item 
+simple pole
+
+\item 
+branch point
+
+\item 
+essential singularity
+
+\end{enumerate}
+
+
+\item Evaluate the integral 
+
+$\int\limits_{- \infty}^{\infty} \frac{dx}{{(x^2+a^2)}^2} , a>0 $,
+
+by the method of residue calculus.
+
+\item Consider a function $f(z)=u + \j v$ defined on $ \abs{z - \j} < 1 $ where $ u,v $ are real valued functions of $ x,y $. Then $f(z)$ is analytic for $u$ equals to
+
+\begin{enumerate}
+
+\item $
+x^2+y^2
+$
+
+\item $
+\ln (x^2+y^2)
+$
+
+\item $
+e^{xy}
+$
+
+\item $
+e^{x^2-y^2}
+$
+
+\end{enumerate}
+
+\item At $z=0$ , the function $f(z)=z^2\bar{z}$
+
+
+\begin{enumerate}
+
+\item 
+does not satisfy Cauchy-Reimann equations
+
+\item 
+satisfies Cauchy-Reimann equations but is not differentiable 
+
+\item 
+is differentiable
+
+\item 
+is analytic
+
+\end{enumerate}
+
+\item Let $\gamma$ be the curve : $ r=2+4 \cos \theta , (0 \leq \theta \leq 2\pi)$. If $ I_{1}=\int\limits_{\gamma} \frac{dz}{z-1}$ and $I_{2}= \int\limits_{\gamma}\frac{dz}{z-3}$ then
+
+\begin{enumerate}
+
+\item $
+I_{1}=2I_{2}
+$
+
+\item $
+I_{1}=I_{2}
+$
+
+\item $
+2I_{1}=I_{2}
+$
+
+\item $
+I_{1}=0, I_{2} \neq 0
+$
+
+\end{enumerate}
+
+\item Let $f(z)$ be an analytic function with a simple pole at $z=1$ and a double pole at $z=2$ with residues $1$ and $-2$ respectively. Further if $f(0)=0$, $f(3)=-\frac{3}{4}$ and $f$ is bounded as $z\rightarrow \infty $ , then $f(z)$ must be
+
+\begin{enumerate}
+
+\item $
+z(z-3)-\frac{1}{4}+\frac{1}{z-1}-\frac{2}{z-1}+\frac{1}{(z-2)^2}
+$
+
+\item $
+-\frac{1}{4}+\frac{1}{z-1}-\frac{2}{z-2}+\frac{1}{(z-2)^2}
+$
+
+\item $
+\frac{1}{z-1}-\frac{2}{z-2}+\frac{5}{(z-2)^2}
+$
+
+\item $
+\frac{15}{4}+\frac{1}{z-1}+\frac{2}{z-2}-\frac{7}{(z-2)^2}
+$
+
+\end{enumerate}
+
+\item An example of a function with a non-isolated essential singularity at $z=2$ is
+
+\begin{enumerate}
+
+\item $
+\tan \frac{1}{z-2}
+$
+
+\item $
+\sin \frac{1}{z-2}
+$
+
+\item $
+e^{-(z-2)}
+$
+
+\item $
+\tan \frac{z-2}{z}
+$
+
+\end{enumerate}
+
+\item Find $I= \int\limits_{c}\frac{\cot(\pi z)}{(z-\j)^2}dz$ , where $C$ is the contour $4x^2+y^2=2$ (counter clock-wise).
+%Then $I$ is equal to
+%
+%\begin{enumerate}
+%
+%\item $
+%0
+%$
+%
+%\item $
+%-2 \pi i
+%$
+%
+%\item $
+%2 \pi i \Big(\frac{\pi}{\sin h^2 \pi} - \frac{1}{\pi}\Big)
+%$
+%
+%\item $
+%- \frac{2 {\pi}^2 i}{\sin h^2 \pi}
+%$
+%
+%\end{enumerate}
+
+\item $\int_{0}^{2 \pi}\frac{d \theta}{13-5 \sin \theta}= $
+
+
+%\begin{enumerate}
+%
+%\item $
+%-\frac{\pi}{6}
+%$
+%
+%\item $
+%-\frac{\pi}{12}
+%$
+%
+%\item $
+%\frac{\pi}{12}
+%$
+%
+%\item $
+%\frac{\pi}{6}
+%$
+%
+%\end{enumerate}
+
+
+\item For the positively oriented unit circle, find $\oint\limits_{\mid z \mid = 1 } \frac{2 \text{Re}(z)}{z+2} dz $
+ 
+%\begin{enumerate}
+%
+%\item $
+%0
+%$
+%
+%\item $
+%\pi i
+%$
+%
+%\item $
+%2 \pi i
+%$
+%
+%\item $
+%4 \pi i
+%$
+%
+%\end{enumerate}
+
+\item The number of zeroes, counting multiplicities, of the polynomial $z^5+3z^3+z^2+1$ inside the circle $ \mid z \mid =2 $ is
+
+
+\begin{enumerate}
+
+\item $
+0
+$
+
+\item $
+2
+$
+
+\item $
+3
+$
+
+\item $
+5
+$
+
+\end{enumerate}
+
+
+\item Consider the functions $f(z)=x^2+\j y^2$ and $g(z)=x^2+y^2+ \j x y$. At $z=0$,
+
+\begin{enumerate}
+
+\item
+$f$ is analytic but not $g$
+
+\item
+$g$ is analytic but not $f$
+
+\item
+both $f$ and $g$ are analytic
+
+\item
+neither $f$ nor $g$ is analytic
+
+
+\end{enumerate}
+
+
+\item Let $\gamma$ be a simple closed curve in the complex.Then the set of all possible values of
+$\oint\limits_{\gamma} \frac{dz}{z(1-z^2)}$ is
+
+\begin{enumerate}
+
+\item $
+\lbrace 0, \pm \pi \j \rbrace
+$
+
+\item $
+\lbrace 0, \pi \j, 2 \pi \j \rbrace
+$
+
+\item $
+\lbrace 0, \pm \pi \j, \pm 2 \pi \j \rbrace
+$
+
+\item $
+\lbrace 0 \rbrace
+$
+
+
+\end{enumerate}
+
+
+\item The principal value of the improper integral $\int\limits_{-\infty}^{\infty} \frac{\cos x}{1+x^2} dx $ is
+
+\begin{enumerate}
+
+\item $
+\frac{\pi}{e}
+$
+
+\item $
+\pi e
+$
+
+\item $
+\pi + e
+$
+
+\item $
+\pi - e
+$
+
+\end{enumerate}
+
+\item The number of roots of the equation $z^5-12z^2+14=0$ that lie in the region 
+$ \lbrace z \in C : 2 \leq \mid z \mid < \frac{5}{2} \rbrace $ is
+
+\begin{enumerate}
+
+\item $
+2
+$
+
+\item $
+3
+$
+
+\item $
+4
+$
+
+\item $
+5
+$
+
+\end{enumerate} 
+
+
+
+
+\item Find the value of $\int\limits_{0}^{2 \pi} \exp ( e^{\j \theta} - \j \theta) \,d \theta $ 
+
+
+%\begin{enumerate}
+%
+%\item $
+%2 \pi i
+%$
+%
+%\item $
+%2 \pi 
+%$
+%
+%\item $
+%\pi 
+%$
+%
+%\item $
+%i \pi
+%$
+%
+%\end{enumerate}
+
+\item The sum of the residues at all the poles of $ f(z) = \frac{\cot \pi z}{(z+a) ^ 2}$ , where $a$ is a constant, $(a \neq 0, \pm 1, \pm 2,......)$ is
+
+\begin{enumerate}
+
+\item $
+\frac{1}{\pi} \sum\limits_{n= -\infty}^{\infty} \frac{1}{(n+a)^2} - \pi \text{cosec}^2 \pi a
+$
+
+
+\item $
+-\frac{1}{\pi} \sum\limits_{n= -\infty}^{\infty} \frac{1}{(n+a)^2} + \pi \text{cosec}^2 \pi a
+$
+
+
+\item $
+-\frac{1}{\pi} \sum\limits_{n= -\infty}^{\infty} \frac{1}{(n+a)^2} - \pi \text{cosec}^2 \pi a
+$
+
+
+\item $
+\frac{1}{\pi} \sum\limits_{n= -\infty}^{\infty} \frac{1}{(n+a)^2} + \pi \text{cosec}^2 \pi a
+$
+
+\end{enumerate}
+
+\item Which of the following is not the real part of an analytic function?
+
+\begin{enumerate}
+
+\item $
+x^2-y^2
+$
+
+\item $
+\frac{1}{1+x^2+y^2}
+$
+
+\item $
+\cos x \cos h y
+$
+
+\item $
+x+ \frac{x}{x^2+y^2}
+$
+
+\end{enumerate}
+
+\item Let $f(z)$ be an analytic function. Then the value of $\int_{0}^{2 \pi} f(e^{\j t}) \cos (t) dt $ equals
+
+\begin{enumerate}
+
+\item $
+0
+$
+
+\item $
+2 \pi f(0) 
+$
+
+\item $
+2 \pi f^\prime(0) 
+$
+
+\item $
+\pi f^\prime(0)
+$
+
+\end{enumerate}
+
+\item Let $f(z)=2z^2-1$. Then the maximum value of $ \mid f(z) \mid $ on the unit disc 
+$ D= \lbrace z \in C :  \abs{z} \leq 1 \rbrace $ equals 
+
+
+\begin{enumerate}
+
+\item $
+1
+$
+
+\item $
+2
+$
+
+\item $
+3
+$
+
+\item $
+4
+$
+
+\end{enumerate} 
+
+
+\item Let $S$ be the positively oriented circle given by $  \abs{z- 3 \j} =2 $. Find the value of 
+$\int\limits_{S} \frac{dz}{z^2+4} $ 
+
+
+%\begin{enumerate}
+%
+%\item $
+%-\frac{\pi}{2}
+%$
+%
+%\item $
+%\frac{\pi}{2}
+%$
+%
+%\item $
+%-\frac{i \pi}{2}
+%$
+%
+%\item $
+%\frac{i \pi}{2}
+%$
+%
+%\end{enumerate}
+%
+%\begin{center}
+%
+%\centering\textbf{Statement for Linked Answer Questions $34$ and $35 $:}
+%
+%\end{center}
+
+
+
+
+\item Let $f(z) = \cos z - \frac{\sin z}{z} $ for non-zero $z \in \mathbb{C}$ and $f(0)=0$. Also,let $g(z)=\sin hz $ for $z \in \mathbb{C}$. Then $f(z)$ has a zero at $z=0$ of order
+
+\begin{enumerate}
+
+\item $
+0
+$
+
+\item $
+1
+$
+
+\item $
+2
+$
+
+\item 
+greater than $2$
+
+
+\end{enumerate}
+
+\item Refer to the previous question for $f(z)$ and $g(z)$.  Then $\frac{g(z)}{z f(z)}$ has a pole at $z=0$ of order
+
+\begin{enumerate}
+
+\item $
+1
+$
+
+\item $
+2
+$
+
+\item $
+3
+$
+
+\item 
+greater than $3$
+
+
+\end{enumerate}
+
+
+\item For the function $ f(z)= \sin \brak{ \frac{1}{\cos\brak{\frac{1}{z}}} }$ , the point $z=0$ is
+
+\begin{enumerate}
+
+\item 
+a removable singularity
+
+\item 
+a pole
+
+\item 
+an essential singularity
+
+\item 
+a non-isolated singularity
+
+\end{enumerate}
+
+%\begin{center}
+%
+%%\centering\textbf{Statement for Linked Answer Questions $37$ and $38$:}
+%
+%\end{center}
+
+
+
+\item Consider the function $f(z) = \frac{e^{\j z}}{z(z^2+1)}$. The residue of $f$ at the isolated singular point in the upper half plane 
+$ \lbrace z=x+\j y : y>0 \rbrace $ is
+
+\begin{enumerate}
+
+\item $
+-\frac{1}{2e}
+$
+
+\item $
+-\frac{1}{e}
+$
+
+\item $
+\frac{e}{2}
+$
+
+\item $
+2
+$
+
+\end{enumerate}
+
+\item The Cauchy Principal Value of the integral $\int\limits_{-\infty}^{\infty} \frac{\sin x dx}{x(x^2+1)} $ is
+
+
+\begin{enumerate}
+
+\item $
+-2 \pi(1+2 e^{-1})
+$
+
+\item $
+\pi(1+e^{-1})
+$
+
+\item $
+2 \pi(1+e) 
+$
+
+\item $
+- \pi(1+e^{-1})
+$
+
+\end{enumerate}
+
+\item Let $ I=\int\limits_{C} \frac{f(z)}{(z-1)(z-2)} dz$, where $f(z)= \sin \frac{\pi z}{2} + \cos \frac{\pi z}{2} $ and $C$ is the curve $  \abs{z}  =3 $ oriented anti-clockwise. Find the value of $I$ 
+
+%\begin{enumerate}
+%
+%\item $
+%4 \pi i
+%$
+%
+%\item $
+%0
+%$
+%
+%\item $
+%- 2 \pi i
+%$
+%
+%\item $
+%- 4 \pi i
+%$
+%
+%\end{enumerate}
+
+\item Let $ f : \mathbb{C} \rightarrow \mathbb{C} $ be analytic except for a simple pole at $z=0$ an let $ g : \mathbb{C} \rightarrow \mathbb{C} $ be analytic.
+Then, the value of $\dfrac{\res{z=0} \lbrace f(z)g(z)\rbrace }{\res{z=0} f(z)} $ is
+
+\begin{enumerate}
+
+\item $
+g(0)
+$
+
+\item $
+g'(0)
+$
+
+\item $
+\lim\limits_{z \to 0} z f(z)
+$
+       
+\item $
+\lim\limits_{z \to 0} z f(z) g(z)
+$
+
+\end{enumerate}
+
+\item Let $C$ be the contour $ \abs{z}= 2$ oriented in the anti-clockwise direction. The value of the integral $\oint\limits_{C} z e ^{\frac{3}{z}} dz $ is
+
+\begin{enumerate}
+
+\item $
+3 \pi \j
+$
+
+\item $
+5 \pi \j
+$
+
+\item $
+7 \pi \j
+$
+
+\item $
+9 \pi \j
+$
+
+\end{enumerate}
+
+\item The function $f(z)= { \abs{z}}^2 + \j \bar{z} + 1 $ is differentiable at
+
+\begin{enumerate}
+
+\item $
+\j
+$
+
+\item $
+1
+$
+
+\item $
+-\j
+$
+
+\item 
+no point in $ \mathbb{C}
+$
+
+\end{enumerate}
+
+\item The inverse Laplace transform of $ \frac{2s^2-4}{(s-3)(s^2-s-2)} $ is
+
+\begin{enumerate}
+
+\item $
+(1+t)e^{-t} + \frac{7}{2} e^{-3t} 
+$
+
+\item $
+\frac{e^t}{3} + t e^{-t} + 2t
+$
+
+\item $
+\frac{7}{2} e^{3t} - \frac{e^{-t}}{6} - \frac{4}{3} e^{2t}
+$
+
+\item $
+\frac{7}{2} e^{-3t} - \frac{e^{t}}{6} - \frac{4}{3} e^{-2t}
+$
+
+\end{enumerate}
+
+\item The maximum modulus of $ e^ {z^2} $ on the set $S = \lbrace z \in \mathbb{C} : 0 \leq \text{Re}(z) \leq 1, 0 \leq \text{Im}(z) \leq 1 \rbrace $ is
+
+\begin{enumerate}
+
+\item $
+\frac{2}{e}
+$
+
+\item $
+e
+$
+
+\item $
+e+1
+$
+
+\item $
+e^2
+$
+
+\end{enumerate}
+
+
+\item Let $\Omega = \lbrace z \in \mathbb{C} : \text{Im}(z) > 0 \rbrace $ and let $C$ be a smooth curve lying in $\Omega $ with initial point $ -1 + 2\j$ and final point $1+2\j$. The value of $ \int\limits_{C} \frac{1+2z}{1+z} dz $ is
+
+\begin{enumerate}
+
+\item $
+4-\frac{1}{2} \ln 2+ \j \frac{\pi}{4}
+$
+
+\item $
+-4+\frac{1}{2} \ln 2+ \j \frac{\pi}{4}
+$
+
+\item $
+4+\frac{1}{2} \ln 2- \j \frac{\pi}{4}
+$
+
+\item $
+4-\frac{1}{2} \ln 2+ \j \frac{\pi}{2}
+$
+
+\end{enumerate}
+
+\item If $a \in \mathbb{C} $ with $ \mid a \mid < 1 $, then the value of
+$$\frac{(1- { \abs{a}  }^2)}{\pi} \int\limits_{\Gamma} \frac{ \abs{dz}}{{\abs{z+a}  }^2}, $$
+where $\Gamma$ is the simple closed curve $ \mid z \mid =1 $  taken with the positive orientation, is 
+$\rule{3cm}{0.15mm}$
+
+
+\item Let $C = \lbrace z \in \mathbb{C} :  \abs{z-\j} =2 \rbrace $. Then $ \frac{1}{2 \pi} \oint_{C} \frac{z^2-4}{z^2+4} dz $ is equal to $ \rule{3cm}{0.15mm}$
+
+\item The value of $\frac{\j}{4 - \pi} \int_{\mid z \mid =4} \frac{dz}{z \cos(z)}$ is equal to $\rule{3cm}{0.15mm}$
+
+\item Let $ \gamma =\lbrace z \in \mathbb{C} :  \abs{z}=2 \rbrace $ be oriented in the counter-clockwise direction. Let
+$$ I = \frac{1}{2 \pi \j} \oint\limits_{\gamma} z^7 \cos \Big(\frac{1}{z^2}\Big) dz. $$
+Then,the value of $I$ is equal to $\rule{3cm}{0.15mm}$ 
+
+\item Let $f(z)=(x^2+y^2)+\j 2 xy $ and $g(z)= 2 xy + \j (y^2-x^2) $ for $z= x+ \j y \in \mathbb{C} $. Then, in the complex plane $\mathbb{C}$.
+
+\begin{enumerate}
+
+\item
+$f$ is analytic and $g$ is NOT analytic.
+
+\item
+$f$ is NOT analytic and $g$ is analytic.
+
+\item
+neither $f$ nor $g$ is analytic.
+
+\item
+both $f$ and $g$ are analytic.
+
+\end{enumerate}
+
+\item Let $C$ be the simple,positively oriented circle of radius $2$ centered at the origin in the complex plane. Then find
+
+$$\frac{2}{\pi \j} \int\limits_{C} \Bigg( z e^{\big(\frac{1}{z}\big)} + \tan \bigg(\frac{z}{2} \bigg) + \frac{1}{(z-1)(z-3)^2} \Bigg) dz $$ . 
+
+\item Let $\Gamma $ be the circle given by $z=4 e^{\j \theta}$, where $\theta$ varies from $ 0 $ to $ 2 \pi $. Find
+
+$$ \oint_{\Gamma} \frac{e^z}{z^2-2z} dz = $$
+
+%\begin{enumerate}
+%
+%\item $
+%2 \pi i (e^2-1)
+%$
+%
+%\item $
+%\pi i (1-e^2)
+%$
+%
+%\item $
+%\pi i (e^2-1)
+%$
+%
+%\item $
+%2 \pi i (1-e^2)
+%$
+%\end{enumerate}
+
+\item Let $f(z)= z^3e^{z^2}$ for $z \in \mathbb{C}$ and let $\Gamma$ be the circle $z= e^{\j \theta}$, where $\theta$ varies from $0$ to $4 \pi $. Then
+
+$$ \frac{1}{2 \pi \j} \oint_{\Gamma} \frac{f'(z)}{f(z)} dz= \rule{3cm}{0.15mm}.$$
+
+
+\end{enumerate}
+
 
 \end{document}
 
