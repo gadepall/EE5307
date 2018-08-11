@@ -1,0 +1,44 @@
+%\documentclass[journal,12pt,article]{IEEEtran}
+%\usepackage{tikz}
+%\usetikzlibrary{calc}
+%\usepackage{tkz-euclide}
+%\usetkzobj{all}
+%\usetikzlibrary{arrows,shapes,decorations.markings,positioning}
+%\begin{document}
+
+
+
+
+\begin{tikzpicture}
+\def\Radius{3}
+  \path
+    (-\Radius, 1) coordinate (A)
+    -- coordinate (M)
+    (\Radius, 0) coordinate (B)
+    (M) +(60:\Radius) coordinate (C)
+    +(2:\Radius) coordinate (D)
+  ;
+\draw[
+      very thick,  decoration={markings, mark=at position -0.84 with {\arrow{>}}},
+        postaction={decorate}
+        ]  
+(D) arc(0:180:\Radius) -- cycle;
+
+
+\draw [thick,->](0.1,-0.5) -- (0.1,5);  
+\begin{scope}[very thick,decoration={markings,mark=at position 0.9999 with {\arrow{>}}}]
+\begin{scope}[very thick,decoration={markings,mark=at position 0.7 with {\arrow{>}}}] 
+\begin{scope}[very thick,decoration={markings,mark=at position -1 with {\arrow{<}}}] 
+\draw[postaction={decorate}] (-4,0.6)--(4,0.6);
+\node[below right= 1mm of {(-0.1,4.2)}] {$\j y$};
+\node[below right= 1mm of {(-3.7,0.7)}] {$-R$};
+\node[below right= 1mm of {(-0.1,1.3)}] {$O$};
+\node[below right= 1mm of {(-0.1,0.7)}] {$C_{1}:z=x$};
+\node[below right= 1mm of {(2.7,0.7)}] {$R$};
+\node[below right= 1mm of {(4,1.1)}] {$x$};
+\node[below right= 1mm of {(1.8,3.5)}] {$C_{2}:z=e^{j\theta},0<\theta<\pi$};
+\end{scope}
+\end{scope}
+\end{scope}
+\end{tikzpicture}
+%\end{document}

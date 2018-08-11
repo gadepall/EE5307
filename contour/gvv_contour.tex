@@ -49,9 +49,9 @@
     \usepackage{ifthen}                                           %%
   %optionally (for landscape tables embedded in another document): %%
     \usepackage{lscape}     
-%\usepackage{tikz}
-%\usepackage{tkz-euclide}
-%\usetkzobj{all}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
 %%\usepackage[utf8]{inputenc}
 %\usepackage{rotating}
 %\usetikzlibrary{arrows,shapes,decorations.markings,positioning}
@@ -300,22 +300,22 @@ Show that
 \end{problem}
 
 %
-\begin{figure}[!h]
-\centering
-\includegraphics[width=\columnwidth]{./figs/contour.eps}
-\caption{}
-\label{fig:contour}
-\end{figure}
-%
-
 %\begin{figure}[!h]
 %\centering
-%\resizebox {\columnwidth} {!} {
-%\input{./figs/contour.tex}
-%}
+%\includegraphics[width=\columnwidth]{./figs/contour.eps}
 %\caption{}
 %\label{fig:contour}
 %\end{figure}
+%
+
+\begin{figure}[!h]
+\centering
+\resizebox {\columnwidth} {!} {
+\input{./figs/contour.tex}
+}
+\caption{}
+\label{fig:contour}
+\end{figure}
 \begin{problem}
 Show that
 \begin{equation}
