@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.7.30)  11 AUG 2018 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.7.30)  11 AUG 2018 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1242,6 +1242,9 @@ Missing character: There is no ) in font nullfont!
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 415.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 415.
 
 
 Underfull \vbox (badness 1533) has occurred while \output is active []
